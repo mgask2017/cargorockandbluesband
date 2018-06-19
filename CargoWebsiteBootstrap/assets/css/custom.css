@@ -1,0 +1,211 @@
+body {
+	margin-top: 50px;
+	font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
+	font-size: 16px;
+	/* background: url('../img/tile.jpg') top left repeat; */
+}
+
+/* ======= HERO SECTION ====== */
+
+#hero {
+	background: url('../img/welcome.jpg') 50% 0 repeat fixed; /* 50%... etc is the parallax*/
+	min-height: 500px;
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 40px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h1,h2 {
+	margin: 0 0 40px;
+}
+
+h3 {
+	margin: 20px 0;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+#optin {
+	background: #0a0b0e;
+	padding: 20px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-size: 1.2em;
+}
+
+#optin p {
+	margin: 7px 0 0 0;
+}
+
+/* FONT AWESOME STYLING*/
+
+#font-awesome{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+
+/* ==== LAYOUT ==== */
+
+.row + .row {  /* Looks for the element of "row" and then 'row immediately afterwards' */
+	margin-top: 20px;
+}
+
+.section-header {
+	text-align: center;
+}
+
+p.lead {
+	text-align: center;
+}
+
+#the-band {
+	background: #78ADBB;
+	padding-bottom: 20px;
+}
+
+#band-info {
+	text-align: center;
+
+}
+
+#band-info img {
+	border-radius: 50px; /*Creates the circle for the testimonial avatar*/
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	padding-bottom: 20px;
+}
+
+#gigs {
+
+	background: url('../img/mic-rock.jpg') 50% 0 repeat fixed; /* 50%... etc is the parallax*/
+	min-height: 500px;
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 40px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#gig-title {
+	margin-top: 10px;
+}
+ 
+#gig-info {
+	padding-bottom: 20px;
+}
+
+/* Testimonals */
+
+#kudos {
+	padding-top: 20px;
+	text-align: center;
+	background-color: #78ADBB
+}
+
+.testimonial {
+	margin-bottom: 60px; /* space inbetween circle avatar testimonials*/
+}
+
+.testimonial img {
+	border-radius: 50%; /*Creates the circle for the testimonial avatar*/
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+blockquote {  /*Testimonial section blockquotes (paragraphs)*/
+	padding: 0;
+	border: none;
+	font-style: italic;
+	text-align: left;
+}
+
+blockquote cite {  /*itialised text underneath the main blockquote*/
+	display: block;
+	color: #777;
+	margin: 15px 0 0 0;
+}
+
+blockquote:before {  /*Removes pseudo space given to text (indent)*/
+	display: none;
+}
+
+
+/* Contact Form CSS */
+
+#contact-title {
+	padding-top: 20px;
+	text-align: center;
+}
+
+label {
+    color: #333;
+}
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+/* Footer CSS */
+
+footer {
+	background: #0a0b0e;
+	padding-top: 10px;
+}
+
+#footer-links {
+	text-align: center;
+}
+
+footer p {
+	margin: 0px;
+}
+
+footer a:link, footer a:visited {
+	color: white;
+}
+
+footer a:hover {
+	color: #dd5638;
+}
+
+footer li.signup-link a {
+	color: #dd5638;
+}
+
+footer li.signup-link a:hover {
+	font-weight: bold;
+}
+
+
+
+/* ==== MEDIA QUERIES ==== */  /* Changes the settings depending on response of device */
+
+@media screen and (max-width : 991px) { /* This CSS adds a white coloured background to the text when resized below 991px */
+	#hero .container {
+		background: rgba(55,55,55,0.5); /* Background colour of the Instructor section*/
+		padding: 20px;
+	} 
+	#gigs .container {
+		background: rgba(55,55,55,0.5); /* Background colour of the Instructor section*/
+		padding: 20px;
+	}
+}
